@@ -40,4 +40,8 @@ public class BankAccount {
       return true;
     }
   }
+  //5
+  public String toString(){
+    return Integer.toString(accountID) + "\t"+ Double.toString(balance);
+  }
 }

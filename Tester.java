@@ -8,5 +8,6 @@ public class Tester{
     System.out.println(b1.withdraw(50.0));
     System.out.println(b1.withdraw(-2.0));
     System.out.println(b1.withdraw(51.0));
+    System.out.println(b1.toString());
   }
 }
