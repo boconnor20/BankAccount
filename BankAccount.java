@@ -9,16 +9,35 @@ public class BankAccount {
     password=pw;
   }
   //2
-  public int getaccountID(){
+  public int getAccountID(){
     return accountID;
   }
-  public double balance(){
+   public double getBalance(){
     return balance;
   }
-  public void setpassword(String p){
+  //3
+  public void setPassword(String p){
     password=p;
   }
-  /*public String getpassword(){
+  /*public String getPassword(){
     return password;
   }*/
+  //4a
+  public boolean deposit(double amount){
+    if (amount>=0){
+      balance+=amount;
+      return true;
+    }
+    else return false;
+  }
+  //4b
+  public boolean withdraw(double amount){
+    if (amount<0||amount>balance){
+      return false;
+    }
+    else {
+      balance-=amount;
+      return true;
+    }
+  }
 }
