@@ -3,8 +3,8 @@ public class BankAccount {
   private int accountID;
   private String password;
   //1
-  public BankAccount(double b, int id, String pw){
-    balance=b;
+  public BankAccount(int id, String pw){
+    balance=0.0;
     accountID=id;
     password=pw;
   }
@@ -15,4 +15,10 @@ public class BankAccount {
   public double balance(){
     return balance;
   }
+  public void setpassword(String p){
+    password=p;
+  }
+  /*public String getpassword(){
+    return password;
+  }*/
 }
