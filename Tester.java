@@ -1,9 +1,18 @@
 public class Tester{
   public static void main(String[] args) {
     BankAccount b1= new BankAccount(23,"password123");
+    BankAccount b2= new BankAccount(21,"goodpassword");
+
     System.out.println(b1.getAccountID());
     b1.setPassword("honeynutcheerios");
     System.out.println(b1.authenticate("honeynutcheerios"));
+
+    System.out.println(b1.deposit(100));
+    System.out.println(b2.deposit(100));
+    System.out.println(b1.transferTo(b2,50.0,"honeynutcheerios"));
+    System.out.println(b1);
+    System.out.println(b2);
+
     /*System.out.println(b1.getPassword());
     System.out.println(b1.deposit(100.0));
     System.out.println(b1.withdraw(50.0));
