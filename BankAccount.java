@@ -32,7 +32,7 @@ public class BankAccount {
   }
   //4b
   public boolean withdraw(double amount){
-    if (amount<0||amount>balance){
+    if (amount<0.0||amount>balance){
       return false;
     }
     else {
@@ -42,6 +42,11 @@ public class BankAccount {
   }
   //5
   public String toString(){
-    return Integer.toString(accountID) + "\t"+ Double.toString(balance);
+    return "#" +Integer.toString(accountID) + "\t"+ "$" + Double.toString(balance);
+  }
+  //Class 10/29/20
+  // public for now to check in Tester
+  public boolean authenticate(String password){
+    return  this.password.equals(password);
   }
 }

@@ -1,9 +1,10 @@
 public class Tester{
   public static void main(String[] args) {
-    /*BankAccount b1= new BankAccount(23,"password123");
+    BankAccount b1= new BankAccount(23,"password123");
     System.out.println(b1.getAccountID());
-    b1.setpassword("honeynutcheerios");
-    System.out.println(b1.getPassword());
+    b1.setPassword("honeynutcheerios");
+    System.out.println(b1.authenticate("honeynutcheerios"));
+    /*System.out.println(b1.getPassword());
     System.out.println(b1.deposit(100.0));
     System.out.println(b1.withdraw(50.0));
     System.out.println(b1.withdraw(-2.0));
@@ -45,7 +46,7 @@ public class Tester{
         //
         */
         //Mr. K's test case
-        BankAccount b1 = new BankAccount(1000001, "abc123");
+        /*BankAccount b1 = new BankAccount(1000001, "abc123");
       BankAccount b2 = new BankAccount(1000231, "abcasdg23");
 
       System.out.println("Account b1:");
@@ -78,6 +79,6 @@ public class Tester{
         }
 
         cashAmount *= 2;
-      }
+      }*/
   }
 }
